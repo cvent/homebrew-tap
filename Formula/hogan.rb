@@ -5,6 +5,8 @@ class Hogan < Formula
   sha256 "e40378992e45f8b2ff0cf36716bb6b543bd045f2d741269f46afd53d3e7f60a0"
   revision 1
 
+  depends_on "openssl@1.1"
+
   def install
     bin.install 'hogan'
   end
