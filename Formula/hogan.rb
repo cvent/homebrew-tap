@@ -2,7 +2,7 @@ class Hogan < Formula
   desc "Customized handlebars wrapper, with config inheritance"
   homepage "https://github.com/cvent/hogan"
   url "https://github.com/cvent/hogan/releases/download/v0.2.10/hogan-v0.2.10-x86_64-apple-darwin.tar.gz"
-  sha256 "e40378992e45f8b2ff0cf36716bb6b543bd045f2d741269f46afd53d3e7f60a0"
+  sha256 "8c565cc66a64e2e69c5885b380414cc1961c4bdd6f1064d60abc3b1763aad230"
   revision 1
 
   depends_on "openssl@1.1"
