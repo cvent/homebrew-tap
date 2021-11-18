@@ -1,8 +1,9 @@
 class Oktaws < Formula
   desc 'CLI access to AWS with Okta Credentials'
+  version "0.15.1"
   homepage 'https://github.com/jonathanmorley/oktaws'
-  url 'https://github.com/jonathanmorley/oktaws/releases/download/v0.10.1/oktaws-v0.10.1-x86_64-apple-darwin.tar.gz'
-  sha256 '08b2e336131386a6b58bf52dff997b0b86356b3fe00ed1aedc6171748fa9b566'
+  url "https://github.com/jonathanmorley/oktaws/releases/download/v#{version}/oktaws-v#{version}-x86_64-apple-darwin.tar.gz"
+  sha256 '396b960ea258558218403e6c58982d09603a0752c005dd22bbbef9bce6d1f28e'
   revision 1
 
   def install
