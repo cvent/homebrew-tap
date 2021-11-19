@@ -26,5 +26,5 @@ jobs:
 
       - name: Run tests
         run: |
-          oktaws -v
-          hogan -v
+          oktaws --version
+          hogan --version
