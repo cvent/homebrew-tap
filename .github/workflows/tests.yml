@@ -1,0 +1,30 @@
+name: homebrew formula install tests
+
+on: [push, pull_request]
+
+jobs:
+
+  test_formulas:
+    strategy:
+      matrix:
+        os:
+          - macos-10.15
+          - macos-11
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Homebrew
+        run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+      - name: Install formulae
+        run: |
+          brew tap cvent/local .
+          brew install oktaws hogan
+
+      - name: Run tests
+        run: |
+          oktaws --version
+          hogan --version
